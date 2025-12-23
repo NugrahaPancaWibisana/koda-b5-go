@@ -5,6 +5,7 @@ import "fmt"
 func main() {
 	fmt.Println(HitungLingkaran(2))
 	SegitigaSikuSiku(10)
+	AddNumberToSlice()
 }
 
 func HitungLingkaran(r int) string {
@@ -54,5 +55,15 @@ func SegitigaSikuSiku(height int) {
 	for range height {
 		fmt.Println(starRange)
 		starRange = starRange + "*"
+	}
+}
+
+func AddNumberToSlice() {
+	data := []int{50, 75, 66, 20, 32, 90}
+
+	data = append(data[:3], append([]int{88}, data[3:]...)...)
+
+	for i, v := range data {
+		fmt.Printf("Index %d: %d\n", i, v)
 	}
 }
