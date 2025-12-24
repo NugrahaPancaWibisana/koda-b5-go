@@ -11,6 +11,7 @@ import (
 	minitask4 "github.com/NugrahaPancaWibisana/koda-b5-go/internal/minitask-4"
 	minitask6 "github.com/NugrahaPancaWibisana/koda-b5-go/internal/minitask-6"
 	minitask7 "github.com/NugrahaPancaWibisana/koda-b5-go/internal/minitask-7"
+	minitask8 "github.com/NugrahaPancaWibisana/koda-b5-go/internal/minitask-8"
 )
 
 func main() {
@@ -31,6 +32,7 @@ func main() {
 		fmt.Println("||  Ketik 6 untuk minitask 7 Print func             ||")
 		fmt.Println("||  Ketik 7 untuk minitask 7 Greet func             ||")
 		fmt.Println("||  Ketik 8 untuk minitask 7 UpdatePersonName func  ||")
+		fmt.Println("||  Ketik 9 untuk minitask 8                        ||")
 		fmt.Println("||                                                  ||")
 		fmt.Println("======================================================")
 		fmt.Println("")
@@ -64,6 +66,8 @@ func main() {
 			scanner.Scan()
 
 			person.UpdatePersonName(scanner.Text())
+		case "9":
+			minitask8.Payment()
 		default:
 			fmt.Println("Input invalid!")
 		}
