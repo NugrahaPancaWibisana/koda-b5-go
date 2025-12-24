@@ -10,13 +10,13 @@ import (
 	minitask3 "github.com/NugrahaPancaWibisana/koda-b5-go/internal/minitask-3"
 	minitask4 "github.com/NugrahaPancaWibisana/koda-b5-go/internal/minitask-4"
 	minitask6 "github.com/NugrahaPancaWibisana/koda-b5-go/internal/minitask-6"
-	// minitask7 "github.com/NugrahaPancaWibisana/koda-b5-go/internal/minitask-7"
+	minitask7 "github.com/NugrahaPancaWibisana/koda-b5-go/internal/minitask-7"
 )
 
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 
-	// person := minitask7.NewPerson("Nugraha Panca Wibisana", "Indonesia", "08123456789")
+	person := minitask7.NewPerson("Nugraha Panca Wibisana", "Indonesia", "08123456789")
 
 	for {
 		fmt.Println("======================================================")
@@ -28,9 +28,9 @@ func main() {
 		fmt.Println("||  Ketik 3 untuk minitask 3                        ||")
 		fmt.Println("||  Ketik 4 untuk minitask 4                        ||")
 		fmt.Println("||  Ketik 5 untuk minitask 6                        ||")
-		// fmt.Println("||  Ketik 6 untuk minitask 7 Print func             ||")
-		// fmt.Println("||  Ketik 7 untuk minitask 7 Greet func             ||")
-		// fmt.Println("||  Ketik 8 untuk minitask 7 UpdatePersonName func  ||")
+		fmt.Println("||  Ketik 6 untuk minitask 7 Print func             ||")
+		fmt.Println("||  Ketik 7 untuk minitask 7 Greet func             ||")
+		fmt.Println("||  Ketik 8 untuk minitask 7 UpdatePersonName func  ||")
 		fmt.Println("||                                                  ||")
 		fmt.Println("======================================================")
 		fmt.Println("")
@@ -54,16 +54,16 @@ func main() {
 			minitask4.DataDiri()
 		case "5":
 			minitask6.OpenFile()
-		// case "6":
-		// 	person.Print()
-		// case "7":
-		// 	person.Greet()
-		// case "8":
-		// 	fmt.Print("Masukan nama: ")
+		case "6":
+			person.Print()
+		case "7":
+			person.Greet()
+		case "8":
+			fmt.Print("Masukan nama: ")
 
-		// 	scanner.Scan()
+			scanner.Scan()
 
-		// 	person.UpdatePersonName(scanner.Text())
+			person.UpdatePersonName(scanner.Text())
 		default:
 			fmt.Println("Input invalid!")
 		}
