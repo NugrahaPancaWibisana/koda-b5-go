@@ -77,7 +77,7 @@ func Payment() {
 			return
 		case "1":
 			list := []int{}
-			
+
 			for {
 				fmt.Println("Ketik exit untuk keluar")
 				fmt.Println("")
@@ -105,7 +105,7 @@ func Payment() {
 			}
 		case "2":
 			list := []int{}
-			
+
 			for {
 				fmt.Println("Ketik exit untuk keluar")
 				fmt.Println("")
@@ -133,7 +133,7 @@ func Payment() {
 			}
 		case "3":
 			list := []int{}
-			
+
 			for {
 				fmt.Println("Ketik exit untuk keluar")
 				fmt.Println("")

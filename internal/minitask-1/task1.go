@@ -19,4 +19,3 @@ func luasLingkaran(r int) int {
 
 	return int(x)
 }
-

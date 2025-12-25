@@ -23,7 +23,7 @@ func OpenFile() {
 }
 
 func readFile(file *os.File) {
-	defer file.Close() 
+	defer file.Close()
 
 	data, e := io.ReadAll(file)
 	if e != nil {
